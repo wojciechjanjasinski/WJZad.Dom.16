@@ -1,11 +1,11 @@
-package YearSeasonsInfo;
+package SeasonsInfo;
 
 import java.util.Scanner;
 
 public class FromUserSeasonScanner {
-    public static YearSeasons getYearSeasonsUserChoice() {
+    public static Seasons getYearSeasonsUserChoice() {
         Scanner scanner = new Scanner(System.in);
         String fromUserSeasonName = scanner.nextLine();
-        return YearSeasons.fromDescription(fromUserSeasonName);
+        return (Seasons) Seasons.fromDescription(fromUserSeasonName);
     }
 }
