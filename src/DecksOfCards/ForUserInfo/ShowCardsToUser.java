@@ -6,6 +6,12 @@ import static DecksOfCards.English.BuildDeck.fillDeckWithCards;
 import static DecksOfCards.Polish.BuildPolishDeck.fillPolishDeckWithPolishCards;
 
 public class ShowCardsToUser {
+    private static String chooseLanguageDescription;
+
+    public String getChooseLanguageDescription() {
+        return chooseLanguageDescription;
+    }
+
     public static void getInfoFromUserAboutDecksToShow() {
         boolean choicePolishDeck;
         boolean choiceEnglishDeck;

@@ -3,9 +3,9 @@ package DecksOfCards.English;
 import java.util.Arrays;
 
 public class BuildDeck {
-
+    public static final int MAXIMUM_CARD_NUMBER_VALUE = 52;
     public static void fillDeckWithCards (){
-        Card[] deckOfCards = new Card[52];
+        Card[] deckOfCards = new Card[MAXIMUM_CARD_NUMBER_VALUE];
         int i = 0;
         for (Suit suit: Suit.values()){
             for (Rank rank: Rank.values()){
